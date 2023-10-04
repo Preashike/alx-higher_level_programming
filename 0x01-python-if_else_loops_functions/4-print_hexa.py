@@ -7,3 +7,8 @@ def get_hexa(number):
     ones = number % 16
     if tens > 0:
         return hexstr[tens] + hexstr[ones]
+    else:
+        return hexstr[ones]
+
+
+if __name__ == '__main__':
