@@ -1,7 +1,8 @@
+
 #!/usr/bin/python3
 
+for letter in range(97, 123):
 
-def print_low_alpha_ex():
-    for a in range(97, 123):
-        if a != 101 and a != 113:
-            print('{}'.format(chr(a)), end='')
+    if chr(letter) is not 'q' and chr(letter) is not 'e':
+
+        print("{}".format(chr(letter)), end="")
