@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 
-
-def get_hexa(number):
-    hexstr = '0123456789abcdef'
-    tens = number // 16
-    ones = number % 16
-    if tens > 0:
-        return hexstr[tens] + hexstr[ones]
-    else:
-        return hexstr[ones]
+# 4-print_hexa.py
 
 
-if __name__ == '__main__':
+"""Print numbers 0 to 98 in decimal and hexadecimal."""
+
+for number in range(0, 99):
+
+    print("{} = {}".format(number, hex(number)))
