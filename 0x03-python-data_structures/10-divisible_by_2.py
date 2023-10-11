@@ -1,27 +1,22 @@
 #!/usr/bin/python3
-# 10-divisible_by_2.py
 
 
 def divisible_by_2(my_list=[]):
-    """Find all multiples of 2 in a list."""
-    multiples = []
-    for i in range(len(my_list)):
-        if my_list[i] % 2 == 0:
-            multiples.append(True)
+    div2_list = []
+    for n in my_list:
+        if n % 2 == 0:
+            div2_list.append(True)
         else:
-            multiples.append(False)
-
-    return (multiples)#!/usr/bin/python3
-# 10-divisible_by_2.py
+            div2_list.append(False)
+    return div2_list
 
 
-def divisible_by_2(my_list=[]):
-    """Find all multiples of 2 in a list."""
-    multiples = []
-    for i in range(len(my_list)):
-        if my_list[i] % 2 == 0:
-            multiples.append(True)
-        else:
-            multiples.append(False)
+if __name__ == '__main__':
+    my_list = [0, 1, 2, 3, 4, 5, 6]
+    list_result = divisible_by_2(my_list)
 
-    return (multiples)
+    i = 0
+    st = "{:d} {:s} divisible by 2"
+    while i < len(list_result):
+        print(st.format(my_list[i], "is" if list_result[i] else "is not"))
+        i += 1
