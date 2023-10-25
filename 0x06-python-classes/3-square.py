@@ -1,17 +1,22 @@
 #!/usr/bin/python3
+"""
+Super simple Square Module.
+"""
 
 
 class Square:
     """
-    class square that has attributes:
-        size
-    some attributes are protected from input.
+    Only does one thing: Gives you its area.
     """
     def __init__(self, size=0):
+        """Initializing this square class
+        Args:
+            size: represents the size of the square defined
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
         """
-        initialization function for our square clasee
-        """
-        if type(size) != int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
@@ -20,6 +25,7 @@ class Square:
 
     def area(self):
         """
-        calculates the area of the square
+        Calculate area of the square
+        Returns: The square of the size
         """
-        return self.__size ** 2
+        return (self.__size ** 2)
