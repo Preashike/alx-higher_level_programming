@@ -10,10 +10,10 @@ def safe_function(fct, *args):
 
         num = fct(*args)
 
-        return num
+        return (num)
 
     except Exception as err:
 
         print("Exception: {}".format(err), file=sys.stderr)
 
-        return None
+        return (None)
