@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], a=0):
 
     num = 0
 
-    for i in range(a):
+    for i in range(ia):
 
         try:
 
@@ -18,4 +18,4 @@ def safe_print_list(my_list=[], a=0):
 
     print("")
 
-    Return
+    Return(num)
