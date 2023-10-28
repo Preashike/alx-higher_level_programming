@@ -11,4 +11,4 @@ def safe_print_list(my_list=[], a=0):
         except:
             continue
     print()
-    return printed
+    return (printed)
